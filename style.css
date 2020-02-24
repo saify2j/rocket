@@ -1,0 +1,23 @@
+body{
+    background:skyblue;
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+}
+
+@keyframes rocketLaunch{
+    0%{
+        transform: rotate(0) scale(1) translateX(0) translateY(0%) skewX(0deg) skewY(0deg);
+        transform-origin: 0;
+        }
+    100%{
+        transform: rotate(0) scale(1) translateX(0) translateY(-360%) skewX(0deg) skewY(0deg);
+        transform-origin: 0;
+        }
+}
+
+.inner-active{
+    animation: rocketLaunch 3s forwards 0s linear;
+}
